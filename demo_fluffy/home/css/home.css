@@ -1,0 +1,842 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.subTitle {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: "Chalkboard SE";
+}
+
+.fontHiragino {
+    font-family: "ヒラギノ角ゴシック";
+}
+
+.fontChalkboardSE {
+    font-family: "Chalkboard SE";
+}
+
+.fontEuphemiaUCAS {
+    font-family: "Euphemia UCAS";
+}
+
+.fontMeiryoUI {
+    font-family: "Meiryo UI";
+}
+
+.fontWeight100 {
+    font-weight: 100;
+}
+
+.fontWeight200 {
+    font-weight: 200;
+}
+
+.fontWeight300 {
+    font-weight: 300;
+}
+
+.fontWeight400 {
+    font-weight: 400;
+}
+
+.fontWeight800 {
+    font-weight: 800;
+}
+
+.txt4rem {
+    font-size: 4rem;
+}
+
+.txt3rem {
+    font-size: 3rem;
+}
+
+.txt2_5rem {
+    font-size: 2.5rem;
+}
+
+.txt2rem {
+    font-size: 2rem;
+}
+
+.txt1_5rem {
+    font-size: 1.5rem;
+}
+
+.txt1rem {
+    font-size: 1rem;
+}
+
+.txt0_8rem {
+    font-size: 0.8rem;
+}
+
+.colorWhite {
+    color: #FFF;
+}
+
+.colorGray {
+    color: #808080;
+}
+
+.colorBlue {
+    color: #29ABE2;
+}
+
+.under { 
+    border-bottom: solid 3px red;
+}
+
+/*【トップ】=============================================================*/
+.top{
+    height: 100vh;
+}
+
+/*背景=============================================================*/
+.backPic {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*ロゴ=============================================================*/
+.logo{
+    position: fixed;
+    top: 7%;
+    left: 3%;
+    line-height: 1em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.logo p{
+    display: block;
+    font-size: 3rem;
+    color: #29ABE2;
+}
+
+/*コピー=============================================================*/
+.copy{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.copy p{
+    display: block;
+    line-height: 3.5rem;
+    color: #000;
+}
+
+/*サイドメニュー=============================================================*/
+.sideMenu{
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.btn1{
+    top: 20%;
+    left: 10%;
+    width: 150px;
+}
+
+.btn2{
+    top: 45%;
+    left: 10%;
+    width: 150px;
+}
+
+.btn3{
+    top: 70%;
+    left: 10%;
+    width: 150px;
+}
+
+.pSVG{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #29abe2;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.SVG{
+    opacity: 1;
+}
+
+.SVG:hover{
+    transition: 0.3s;
+    animation: svgHover 0.8s ease-in-out both;
+    opacity: 0.8;
+}
+
+.SVG1:hover + .pSVG1{
+    font-size: 1.3rem;
+}
+
+.SVG2:hover + .pSVG2{
+    font-size: 1.3rem;
+}
+
+.SVG3:hover + .pSVG3{
+    font-size: 1.3rem;
+}
+
+.svgPath {
+    fill:#E6E6E6;
+    stroke-miterlimit:10;
+    stroke-width:1;
+}
+
+@keyframes svgHover {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/*【コンセプト】=============================================================*/
+.concept {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 10px 0;
+    border-bottom: 20px dotted #4D4D4D;
+}
+
+.conceptTxt {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1rem;
+    color: #4D4D4D;
+}
+
+.conceptWrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    padding: 0;
+    border: 0.1rem solid #29abe2;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.conceptWrap1 {
+    opacity: 1;
+    z-index: 1;
+    border-radius: 350px 300px 350px 300px ;
+    background-image: url("../image/conceptBackPic1.jpg");
+    background-size: cover;
+}
+
+.conceptWrap2 {
+    opacity: 0;
+    z-index: 0;
+    border-radius: 300px 350px 300px 350px ;
+    background-image: url("../image/conceptBackPic2.jpg");
+    background-size: cover;
+}
+
+.conceptWrap3 {
+    opacity: 0;
+    z-index: 0;
+    border-radius: 350px 300px 350px 300px ;
+    background-image: url("../image/conceptBackPic3.jpg");
+    background-size: cover;
+}
+
+.conceptPagination {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.pagination1 {
+    background:#29abe2;
+}
+
+.pagination2, .pagination3 {
+    background:#4D4D4D;
+}
+
+.pagination1, .pagination2, .pagination3 {
+    width:12px;
+    height:12px;
+    border-radius:100%;
+    margin: 0 10px 0 10px;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.next {
+    right: 5%;
+}
+
+.prev {
+    left: 5%;
+    cursor: default;
+}
+
+.next span, .prev span {
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.next span {
+    right: 0;
+    background-color: #29abe2;
+}
+
+.prev span {
+    left: 0;
+    background-color: #CCCCCC;
+}
+
+.next, .next span, .prev, .prev span  {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.next span:nth-of-type(1) {
+    top: 0;
+    -webkit-transform: translateY(8px) rotate(315deg);
+    transform: translateY(8px) rotate(315deg);
+}
+
+.next span:nth-of-type(2) {
+    bottom: 0;
+    -webkit-transform: translateY(-8px) rotate(-315deg);
+    transform: translateY(-8px) rotate(-315deg);
+}
+
+.prev span:nth-of-type(1) {
+    top: 0;
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+
+.prev span:nth-of-type(2) {
+    bottom: 0;
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.conceptElementCover {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
+    word-break: break-all;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.conceptElement1 {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    color: #29abe2;
+    border: solid 1px #29abe2;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.conceptElement2 {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #29abe2;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+}
+
+.conceptElement3 {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #29abe2;
+    width: 50%;
+    text-align: center;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+
+
+/*【メニュー】=============================================================*/
+.menu {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.menuTxt {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #4D4D4D;
+}
+
+.menuTitleTxt {
+    position: absolute;
+    width: 500px;
+    top: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #29abe2;
+}
+
+.menuImg {
+    border-radius: 50%;
+    object-fit:cover;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    border: 1px solid #29abe2;
+    opacity: 1;
+}
+
+.menuImg:hover {
+    animation: menuHover 0.8s ease-in-out both;
+}
+
+.menu1 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    animation: menuAnimeUp 5s ease-in-out both infinite;
+}
+
+.menu2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    animation: menuAnimeRight 5s ease-in-out both infinite;
+}
+
+.menu3 {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    animation: menuAnimeLeft 5s ease-in-out both infinite;
+}
+
+.menu4 {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    animation: menuAnimeDown 5s ease-in-out both infinite;
+}
+
+.menuBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+
+.menuWrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 700px;
+    padding: 0;
+    background-color: #FFF;
+    border-radius: 350px 350px 350px 350px ;
+    opacity: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.menuWrap::-webkit-scrollbar{
+    display: none;
+}
+
+.menuList {
+    list-style-type: none;
+    padding: 0;
+    margin: 130px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    color: #4D4D4D;
+    margin: 5px 5px 25px 5px;
+    width: calc(25% - 10px);
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+/*閉じる【メニュー】=====================================================================*/
+.menuClose {
+    position: absolute;
+    top: 120px;
+    left: 20%;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    opacity: 0;
+}
+.menuClose span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+}
+.menuClose, .menuClose span {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.menuClose span:nth-of-type(1) {
+    top: 0;
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+.menuClose span:nth-of-type(2) {
+    bottom: 0;
+    -webkit-transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+
+/*【アクセス】=============================================================*/
+.infomap {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 10px;
+    border-top: 20px dotted #4D4D4D;
+}
+
+.infomapTxt {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1rem;
+    color: #4D4D4D;
+}
+
+.infomapWrap{
+    position: absolute;
+    top: 200px;
+    width: 1100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #000;
+}
+
+.infoBox {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 5%;
+    width: 550px;
+}
+
+.svgPathInfoBox {
+    fill:none;
+    stroke:#29abe2;
+    stroke-miterlimit:10;
+    stroke-width:0.3;
+}
+
+.info{
+    float: left;
+    width: 500px;
+}
+
+.map {
+    float: right;
+    width: 600px;
+}
+
+.map iframe {
+    border: solid 1px #29abe2;
+}
+
+
+/*フッター=============================================================*/
+footer {
+    position: relative;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #29abe2;
+}
+
+.footerTxt {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*アニメーション=============================================================*/
+@keyframes menuAnimeUp {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 15px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes menuAnimeDown {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -15px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes menuAnimeRight {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(15px,0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes menuAnimeLeft {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-15px,0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes menuHover {
+    0% {
+        outline: solid 3px #29abe2;
+        outline-offset: 10px;
+    }
+    50% {
+        outline: solid 2px #29abe2;
+        outline-offset: 30px;
+    }
+    100% {
+        outline: solid 3px #29abe2;
+        outline-offset: 10px;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sideMenuBtn1ScrollNotTop {
+    0% {
+        top: 0%;
+        left: 10%;
+        width: 150px;
+    }
+    100% {
+        top: 5%;
+        left: 70%;
+        width: 120px;
+    }
+}
+
+@keyframes sideMenuBtn2ScrollNotTop {
+    0% {
+        top: 0%;
+        left: 10%;
+        width: 150px;
+    }
+    100% {
+        top: 5%;
+        left: 80%;
+        width: 120px;
+    }
+}
+
+@keyframes sideMenuBtn3ScrollNotTop {
+    0% {
+        top: 0%;
+        left: 10%;
+        width: 150px;
+    }
+    100% {
+        top: 5%;
+        left: 90%;
+        width: 120px;
+    }
+}
+
+@keyframes sideMenuBtn1ScrollTop {
+    0% {
+        top: 5%;
+        left: 70%;
+        width: 120px;
+    }
+    100% {
+        top: 20%;
+        left: 10%;
+        width: 150px;
+    }
+}
+
+@keyframes sideMenuBtn2ScrollTop {
+    0% {
+        top: 5%;
+        left: 70%;
+        width: 120px;
+    }
+    100% {
+        top: 45%;
+        left: 10%;
+        width: 150px;
+    }
+}
+
+@keyframes sideMenuBtn3ScrollTop {
+    0% {
+        top: 5%;
+        left: 70%;
+        width: 120px;
+    }
+    100% {
+        top: 70%;
+        left: 10%;
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.4 152.78">
+	<defs>
+		<style>
+			.cls-1{
+				fill:#4d4d4d;
+				stroke:#29abe2;
+				stroke-miterlimit:10;}
+		</style>
+	</defs>
+	<path class="cls-1" d="M168,95.32c6.22,48.77-28.21,82-75.43,70.94-32.86-7.7-83.68-35.2-75.33-76.5C23.64,58,60.69,24.09,92.71,17.64,136.71,8.78,163.32,58.85,168,95.32Z" transform="translate(-15.8 -16.11)"/>
+</svg>

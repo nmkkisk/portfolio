@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/camp_mainPic.png);
+    background-size: cover;
+    background-repeat:  no-repeat;
+    overflow-x: hidden;
+    
+}
+
+/*.clearFix:after{
+    content: "";
+    display: block;
+    clear: both;
+}*/
+
+/*ヘッダー=====================================================================*/
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    position: fixed;
+    opacity: 0;
+}
+
+.navi{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    position: fixed;
+}
+
+.navi li{
+    float: left;
+    margin: 0 20px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Courier";
+}
+
+
+/*メイン=====================================================================*/
+#Main{
+    position: relative;
+    top:0px;
+}
+
+/*スライド-STR=============================*/
+.cafe_in{
+    position: absolute;
+    margin-top:10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.cafe_in img{
+    width: 50%;
+    height: 50%;
+}
+
+.coffee{
+    position: absolute;
+    margin-top:10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.coffee img{
+    width: 50%;
+    height: 50%;
+}
+
+.bread{
+    position: absolute;
+    margin-top:10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.bread img{
+    width: 50%;
+    height: 50%;
+}
+
+.lego_blocks{
+    position: absolute;
+    margin-top:10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.lego_blocks img{
+    width: 50%;
+    height: 50%;
+}
+
+/*スライド-END=============================*/
+
+.main_window{
+    position: absolute;
+    top:10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.main_window img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo_main{
+    position: absolute;
+    margin-top:17%;
+    left: 0;
+}
+
+.logo_main img{
+    width: 20%;
+    height: 20%;
+}
+
+.copy p{
+    writing-mode: vertical-rl;
+    font-size: 3vw;
+    height: 40vw;
+    position: absolute;
+    margin-top: 12%;
+    right: 0%;
+    font-family: 'Tsukushi A Round Gothic';
+    
+    z-index: 90;
+    color:darkslategrey;
+}
+
+/*アバウト=====================================================================*/
+#About{
+    position: relative;
+    top:50vw;
+}
+
+.about{
+    /*width: 50vw;*/
+    width: 100vw;
+    height: 6vw;
+    /*border-bottom: 7px double black;*/
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 0%;
+    /*left: 3%;*/
+    text-align: center;
+    font-family: "Courier";
+    color:black;
+}
+
+.about_pic1{
+    position: absolute;
+    margin-top: 15%;
+    text-align: left;
+}
+
+.about_text1 p{
+    writing-mode: vertical-rl;
+    /*text-indent: 1em;*/
+    line-height: 2.5;
+    font-size: 2vw;
+    height: 40vw;
+    position: absolute;
+    margin-top: 15%;
+    right: 0%;
+    font-family: 'Tsukushi A Round Gothic';
+    color:darkslategrey;
+}
+
+.about_pic2{
+    position: absolute;
+    margin-top: 50%;
+    text-align: right;
+}
+
+.about_text2 p{
+    writing-mode: vertical-rl;
+    /*text-indent: 1em;*/
+    line-height: 2.5;
+    font-size: 2vw;
+    height: 40vw;
+    position: absolute;
+    margin-top: 50%;
+    left: 0%;
+    font-family: 'Tsukushi A Round Gothic';
+    color:darkslategrey;
+}
+
+/*メニュー=====================================================================*/
+#Menu{
+    position: relative;
+    top:135vw;
+}
+
+.menu{
+    /*width: 50vw;*/
+    width: 100vw;
+    height: 6vw;
+    /*border-bottom: 7px double black;*/
+    text-align: right;
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 0%;
+    /*right: 3%;*/
+    text-align: center;
+    font-family: "Courier";
+    color:black;
+}
+
+/*メニュースライド-START=============================*/
+.morning{
+    position: absolute;
+    margin-top: 10%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    transform: translateX(0%);
+    transition: 1s;
+}
+.morning_back{
+    position: absolute;
+    margin-top: 2%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    z-index: -1;
+}
+
+.lunch{
+    position: absolute;
+    margin-top: 10%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 1s;
+}
+.lunch_back{
+    position: absolute;
+    margin-top: 2%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    z-index: -2;
+    opacity: 0;
+}
+
+.evening{
+    position: absolute;
+    margin-top: 10%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 1s;
+}
+.evening_back{
+    position: absolute;
+    margin-top: 2%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    z-index: -3;
+    opacity: 0;
+}
+
+/*メニュースライド-END=============================*/
+
+/*メニューボタン-START=============================*/
+.menu_btn{
+    position: absolute;
+    margin-top: 53%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*morning=============================*/
+a.morning_btn {
+    color: dodgerblue;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 200px;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /*outline: 1px solid;
+    outline-color: black;*/
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+a.morning_btn:hover {
+    color: dodgerblue;
+    border-color: dodgerblue;
+    box-shadow: inset 0 0 2px dodgerblue, 0 0 2px dodgerblue;
+    outline-color: transparent;
+    outline-offset: 12px;
+}
+
+/*lunch=============================*/
+a.lunch_btn {
+    color: black;
+    display: inline-block;
+    font-size: 22px;
+    /*font-weight: bold;*/
+    line-height: 1.5;
+    width: 200px;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /*outline: 1px solid;
+    outline-color: black;*/
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+a.lunch_btn:hover {
+    color: orangered;
+    border-color: orangered;
+    box-shadow: inset 0 0 2px orangered, 0 0 2px orangered;
+    outline-color: transparent;
+    outline-offset: 12px;
+}
+
+/*afternoon=============================*/
+a.evening_btn {
+    color: black;
+    display: inline-block;
+    font-size: 22px;
+    /*font-weight: bold;*/
+    line-height: 1.5;
+    width: 200px;
+    position: relative;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /*outline: 1px solid;
+    outline-color: black;*/
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+a.evening_btn:hover {
+    color: navy;
+    border-color: navy;
+    box-shadow: inset 0 0 2px navy, 0 0 2px navy;
+    outline-color: transparent;
+    outline-offset: 12px;
+}
+
+/*メニューボタン-END=============================*/
+
+/*トイ=====================================================================*/
+#Toys{
+    position: relative;
+    top:200vw;
+}
+
+.toys{
+    /*width: 50vw;*/
+    width: 100vw;
+    height: 6vw;
+    /*border-bottom: 7px double black;*/
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 0%;
+    /*left: 3%;*/
+    text-align: center;
+    font-family: "Courier";
+    color:black;
+    /*border-bottom: 2px solid #666666;*/
+}
+
+#toys_gallery{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -1.7%;
+}
+
+#toys_gallery li{
+    display: block;
+    text-align: center;
+    float:left;
+    width:33%;
+    height: 33%;
+    list-style: none;
+    margin: 0 0 5vw 0;
+}
+
+#toys_gallery img{
+    width:70%;
+    height: 70%;
+}
+
+
+/*アクセス=====================================================================*/
+#Access{
+    position: relative;
+    top:310vw;
+    width: 100%;
+}
+
+.access{
+    /*width: 50vw;*/
+    width: 100vw;
+    height: 6vw;
+    /*border-bottom: 7px double black;*/
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 0%;
+    /*right: 3%;*/
+    text-align: center;
+    font-family: "Courier";
+    color:black;
+}
+
+.address{
+    position: absolute;
+    margin-top: 11%;
+    left: 17%;
+    /*transform: translateX(80%);*/
+    text-align: left;
+}
+
+.address .title{
+    font-size: 2vw;
+    font-family: "Tsukushi A Round Gothic";
+}
+
+.address .contents{
+    font-size: 1vw;
+    font-family: "Tsukushi A Round Gothic";
+}
+
+.cafe_out{
+    position: absolute;
+    margin-top: 10%;
+    transform: translateX(60%);
+}
+
+#Map{
+    position: absolute;
+    margin-top: 30%;
+    width: 100%;
+    height: 35vw;
+}
+
+
+/*フッター=====================================================================*/
+#footer{
+    position: relative;
+    top:375vw;
+    width: 100%;
+    height: 2%;
+    background-color: black;
+}
+
+#footer p{
+    color: white;
+    font-size: 0.1vw;
+    text-align: center;
+    line-height:2vw;    /*一行の太さ*/
+}

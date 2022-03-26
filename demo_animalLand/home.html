@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>animalland</title>
+        <link rel="stylesheet" href="home/css/home.css">
+        <link rel="stylesheet" href="home/css/reset.css">
+        <script src="home/js/jquery-3.5.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="home/js/home.js"></script>
+    </head>
+    <body>
+       
+        <div class="top">
+           
+            <!-- 背景 -->
+            <div class="backPicHaru">
+                <div class="backPic" style="background-image: url(home/image/backPicHaru.png)"></div>
+                <img class="backPicYama" src="home/image/backPicHaruYama.png">
+                <img class="backPicTree" src="home/image/backPicHaruTree.png">
+            </div>
+            <div class="backPicNatsu">
+                <div class="backPic" style="background-image: url(home/image/backPicNatsu.png)"></div>
+                <img class="backPicYama" src="home/image/backPicNatsuYama.png">
+                <img class="backPicTree" src="home/image/backPicNatsuTree.png">
+            </div>
+            <div class="backPicAki">
+                <div class="backPic" style="background-image: url(home/image/backPicAki.png)"></div>
+                <img class="backPicYama" src="home/image/backPicAkiYama.png">
+                <img class="backPicTree" src="home/image/backPicAkiTree.png">
+            </div>
+            <div class="backPicFuyu">
+                <div class="backPic" style="background-image: url(home/image/backPicFuyu.png)"></div>
+                <img class="backPicYama" src="home/image/backPicFuyuYama.png">
+                <img class="backPicTree" src="home/image/backPicFuyuTree.png">
+            </div>
+
+            <!-- ロゴ -->
+            <img class="logo" src="home/image/logo.png" style="width: 400px; height: 250px;">
+            
+            <!-- 季節切り替え -->
+            <nav>
+                <ul class="navi">
+                    <li class="circle naviHaru fontHiragino txt1_5rem">はる</li>
+                    <li class="circle naviNatsu fontHiragino txt1_5rem">なつ</li>
+                    <li class="circle naviAki fontHiragino txt1_5rem">あき</li>
+                    <li class="circle naviFuyu fontHiragino txt1_5rem">ふゆ</li>
+                </ul>
+            </nav>
+            
+            <!-- 動物（キッズメニュー） -->
+            <div class="kidsMenuHN">
+                <img class="animalLeft" src="home/image/animal1.png">
+                <img class="animalCenter" src="home/image/animal2.png">
+                <img class="animalRight" src="home/image/animal3.png">
+            </div>
+            <div class="kidsMenuAF">
+                <img class="animalLeft" src="home/image/animal4.png">
+                <img class="animalCenter" src="home/image/animal5.png">
+                <img class="animalRight" src="home/image/animal6.png">
+            </div>
+            
+            <div class="fukidashi">
+                <img class="fukidashiLeft" src="home/image/fukidashi1.png">
+                <img class="fukidashiCenter" src="home/image/fukidashi2.png">
+                <img class="fukidashiRight" src="home/image/fukidashi3.png">
+            </div>
+            
+            
+            <!-- メニューボックス -->
+            <div class="btnTrigger" id="naviBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="menuBox">
+                <a href="#" class="fontHiragino txt1rem colorWhite">営業時間・料金</a><br>
+                <a href="#" class="fontHiragino txt1rem colorWhite">アクセス</a><br>
+                <a href="#" class="fontHiragino txt1rem colorWhite">園内ガイド</a><br>
+                <a href="#" class="fontHiragino txt1rem colorWhite">よくあるご質問</a><br>
+                <a href="#" class="fontHiragino txt1rem colorWhite">お問い合わせ</a>
+            </div>
+            
+        </div>
+        
+        <!-- コンテンツ -->
+        <div class="wrapper">
+           
+            <!-- 動物一覧 -->
+            <div class="animalList">
+                <p class="animalListTitle fontHiragino txt3rem colorWhite">🐾　こんな動物がいるよ！　🐾</p>
+                <ul class="gallery colorYellow">
+                    <li><img src = "home/image/animalList/1.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ホワイトタイガー</p>
+                    </li>
+                    <li><img src = "home/image/animalList/2.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">カワウソ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/3.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">アルパカ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/4.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">チーター</p>
+                    </li>
+                    <li><img src = "home/image/animalList/5.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">リス</p>
+                    </li>
+                    <li><img src = "home/image/animalList/6.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">コンドル</p>
+                    </li>
+                    <li><img src = "home/image/animalList/7.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">シカ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/8.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">レッサーパンダ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/9.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">カピバラ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/10.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ワラビー</p>
+                    </li>
+                    <li><img src = "home/image/animalList/11.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ワオキツネザル</p>
+                    </li>
+                    <li><img src = "home/image/animalList/12.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">シマウマ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/13.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">モルモット</p>
+                    </li>
+                    <li><img src = "home/image/animalList/14.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ヒヨコ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/15.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ヤギ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/16.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ヒツジ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/17.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ゾウ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/18.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ライオン</p>
+                    </li>
+                    <li><img src = "home/image/animalList/19.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">タヌキ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/20.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">フラミンゴ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/21.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">キツネ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/22.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">アクシスジカ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/23.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">アリクイ</p>
+                    </li>
+                    <li><img src = "home/image/animalList/24.jpg" width="200" height="200">
+                        <p class="animalName fontHiragino">ブタ</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 今日のイベント -->
+            <div class="schedule">
+                <p class="scheduleTitle fontHiragino txt3rem colorWhite">🐾　今日はこんなことをやってるよ！　🐾</p><br>
+                <p class="date fontHiragino txt2rem colorWhite">MONTH DDth, YYYY</p>
+                <br><br><br>
+                <!--イベント１-->
+                <p class="fontHiragino txt2rem colorYellow">エサをあげる</p>
+                <div class="eventBox eventBox1_1 clearfix">
+                    <img class="eventPic" src = "home/image/event1-1.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">シカのおやつコーナー</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　10:00〜</p><br>
+                        <p class="fontHiragino txt1rem colorWhite">※なくなり次第終了</p>
+                    </div>
+                </div>
+                <div class="eventBox eventBox1_2 clearfix">
+                    <img class="eventPic" src = "home/image/event1-2.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">ロバ・ポニーのおやつコーナー</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　10:00〜15:00</p><br>
+                        <p class="fontHiragino txt1rem colorWhite">※なくなり次第終了</p>
+                    </div>
+                </div>
+                <div class="eventBox eventBox1_3 clearfix">
+                    <img class="eventPic" src = "home/image/event1-3.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">ヤギ・ヒツジのおやつコーナー</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　10:00〜15:30</p><br>
+                        <p class="fontHiragino txt1rem colorWhite">※なくなり次第終了</p>
+                    </div>
+                </div>
+                <div class="eventBox eventBox1_4 clearfix">
+                    <img class="eventPic" src = "home/image/event1-4.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">ガチョウのおやつコーナー</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　10:00〜</p><br>
+                        <p class="fontHiragino txt1rem colorWhite">※なくなり次第終了</p>
+                    </div>
+                </div>
+                <div class="eventBox eventBox1_5 clearfix">
+                    <img class="eventPic" src = "home/image/event1-5.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">アルパカのおやつコーナー</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　15:15〜</p><br>
+                        <p class="fontHiragino txt1rem colorWhite">※なくなり次第終了</p>
+                    </div>
+                </div>
+                
+                <!--イベント２-->
+                <p class="fontHiragino txt2rem colorYellow">近くで見る</p>
+                <div class="eventBox eventBox2_1 clearfix">
+                    <img class="eventPic" src = "home/image/event2-1.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">ふれあい動物パレード</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　13:00〜</p><br>
+                    </div>
+                </div>
+                <div class="eventBox eventBox2_2 clearfix">
+                    <img class="eventPic" src = "home/image/event2-2.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">マントヒヒダッシュ</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">開催時間　10:30/11:30/14:00</p><br>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- ショップ -->
+            <div class="shop">
+                <p class="shopTitle fontHiragino txt3rem colorWhite">🐾　こんなお店があるよ！　🐾</p>
+                <br><br><br>
+                
+                <div class="shopBox shopBox1 clearfix">
+                    <img class="shopPic" src = "home/image/shop1.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">パンケーキハウス</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">カフェレストランです。授乳室・おむつ替スペースもあるので、お子様づれの方も安心してご利用いただけます。</p><br>
+                    </div>
+                </div>
+                <div class="shopBox shopBox2 clearfix">
+                    <img class="shopPic" src = "home/image/shop2.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">中央レストラン</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">和食を中心とし、お子様からご年配の方々まで幅広くご利用頂けるレストランです。季節毎のメニューも充実しております。</p><br>
+                    </div>
+                </div>
+                <div class="shopBox shopBox3 clearfix">
+                    <img class="shopPic" src = "home/image/shop3.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">展望レストラン</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">湖畔に浮かぶ展望レストラン。休日はバーベキューや鉄板焼きランチ等お楽しみいただけます。平日は喫茶メニューをご用意しています。</p><br>
+                    </div>
+                </div>
+                <div class="shopBox shopBox4 clearfix">
+                    <img class="shopPic" src = "home/image/shop4.jpg">
+                    <div class="eventTxt">
+                        <p class="fontHiragino txt1_5rem colorWhite">フードコート&amp;おみやげ　カーニバル</p><br><br>
+                        <p class="fontHiragino txt1rem colorWhite">フードコートで、ゆとりある空間でゆったりとお食事頂けるレストランです。隣接しておみやげショップもあります。</p><br>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <div class="empty"></div>
+        
+    </body>
+</html>

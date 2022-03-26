@@ -171,6 +171,7 @@ a:link, a:visited, a:hover, a:active{
     box-sizing: border-box;
     -webkit-transition: .3s;
     transition: .3s;
+    pointer-events: none;
 }
 
 .demoList > li:hover {

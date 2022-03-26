@@ -64,6 +64,7 @@ $(function(){
     $('.demoSiteNav a').click(
         function() {
             $('.demoSiteWrapCover').css('opacity','1');
+            $('.demoList > li').css('pointer-events', 'auto');
         }
     )
     
@@ -74,74 +75,8 @@ $(function(){
         $('.box').css('background-color','transparent');
         $('.WrapCover').css('opacity','0');
         $('.btnTrigger').css('opacity','0');
+        $('.demoList > li').css('pointer-events', 'none');
     }); 
-});
-
-
-
-
-
-
-
-/*プロフィール表示切り替え==================================================================================================================*/
-$(function(){
-    var clickFlg = false;
-    
-    $('.profileBtn').on('click', function() {
-        $('.dummyBody').css('z-index', '1');
-        $('.dummyBody').stop().animate({'opacity':'0.8'});
-        $('.profileTitle').stop().animate({'opacity':'1'});
-        $('.profileBack').css('z-index', '1');
-        $('.profileBack').stop().animate({'opacity':'0.8'});
-        $('#profileMovie').stop().animate({'opacity':'0'});
-        $('.btnTrigger').css('z-index', '2');
-        $('.btnTrigger').stop().animate({'opacity':'1'});
-        $('.menu').stop().animate({'opacity':'0'});
-    }); 
-    
-    /*閉じるボタンクリック=====*/
-    $('.btnTrigger').on('click', function() {
-        $('.dummyBody').css('z-index', '-1');
-        $('.dummyBody').stop().animate({'opacity':'0'});
-        $('.profileTitle').stop().animate({'opacity':'0'});
-        $('.profileBack').css('z-index', '-1');
-        $('.profileBack').stop().animate({'opacity':'0'});
-        $('.btnTrigger').css('z-index', '2');
-        $('.btnTrigger').stop().animate({'opacity':'0'});
-        $('.menu').stop().animate({'opacity':'1'});
-    }); 
-    
-});
-
-
-/*デモサイト一覧表示切り替え==================================================================================================================*/
-$(function(){
-    var clickFlg = false;
-
-    $('.demoBtn').on('click', function() {
-        $('.dummyBody').css('z-index', '1');
-        $('.dummyBody').stop().animate({'opacity':'0.8'});
-        $('.demoTitle').stop().animate({'opacity':'1'});
-        $('.dmeoBack').css('z-index', '1');
-        $('.dmeoBack').stop().animate({'opacity':'0.8'});
-        $('#demoMovie').stop().animate({'opacity':'0'});
-        $('.btnTrigger').css('z-index', '2');
-        $('.btnTrigger').stop().animate({'opacity':'1'});
-        $('.menu').stop().animate({'opacity':'0'});
-    }); 
-
-    /*閉じるボタンクリック=====*/
-    $('.btnTrigger').on('click', function() {
-        $('.dummyBody').css('z-index', '-1');
-        $('.dummyBody').stop().animate({'opacity':'0'});
-        $('.demoTitle').stop().animate({'opacity':'0'});
-        $('.dmeoBack').css('z-index', '-1');
-        $('.dmeoBack').stop().animate({'opacity':'0'});
-        $('.btnTrigger').css('z-index', '2');
-        $('.btnTrigger').stop().animate({'opacity':'0'});
-        $('.menu').stop().animate({'opacity':'1'});
-    }); 
-
 });
 
 

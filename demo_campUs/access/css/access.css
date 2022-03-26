@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/*ロード中=====================================================================*/
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: white;
+    z-index: 1;
+}
+#loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+
+/*フォント=====================================================================*/
+.Kaushan{
+    font-family: "Kaushan Script", cursive;
+}
+
+.YuMincho{
+    font-family: "YuMincho";
+}
+
+/*aタグ=====================================================================*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*h1タグ=====================================================================*/
+h1{
+    font-size: 3vw;
+}
+
+/*h2タグ=====================================================================*/
+h2{
+    font-size: 2vw;
+}
+
+/*背景=====================================================================*/
+.background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background_img {
+    /*z-index:-9;*/
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 20s 0s infinite;
+    animation: anime 20s 0s infinite;
+}
+
+.background_img:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s; }
+
+.background_img:nth-of-type(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s; }
+
+.background_img:nth-of-type(4) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s; }
+
+/*.background_img:nth-of-type(5) {
+-webkit-animation-delay: 24s;
+animation-delay: 24s; }
+
+.background_img:nth-of-type(6) {
+-webkit-animation-delay: 30s;
+animation-delay: 30s; }*/
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+        transform: scale(1.1) ;
+        /*z-index:-10;*/
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
+
+.logo{
+    z-index: 3;
+    top: 1%;
+    left: 1%;
+    position: fixed;
+}
+
+.content{
+    position: relative;
+    top: 2%;
+    height: 100%;
+}
+
+.accessPic{
+    z-index: 2;
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.access{
+    z-index: 2;
+    pointer-events: none;
+    position: absolute;
+    top: 3.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 15vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.concept{
+    z-index: 2;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    margin: auto;
+    width: 10vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.plan{
+    z-index: 2;
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    margin: auto;
+    width: 10vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+.concept a::before, .plan a::before, .access a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+.concept a:hover::before, .plan a:hover::before, .access a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+/*本文=====================================================================*/
+.wrap{
+    z-index: 4;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -ms-overflow-style: none;
+    border-top: 3px dashed gray;
+}
+
+.wrap::-webkit-scrollbar {
+    display:none;
+}
+
+.separation10{
+    height: 10%;
+}
+
+.separation3{
+    height: 3%;
+}
+
+/*common_sentence===================*/
+.address{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    
+}
+
+.addressEng{
+    position: absolute;
+    top: -35%;
+    font-size: 4.5vw;
+    letter-spacing: 0.05em;
+    font-family: "Noteworthy";
+}
+
+.addressJpn{
+    position: absolute;
+    top: 40%;
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    font-family: "Tsukushi A Round Gothic";
+}
+
+.addressPic{
+    text-align: right;
+    margin: auto;
+}
+
+/*マップ===*/
+.googleMapTxt{
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2vw;
+    font-family: "Gill Sans", sans-serif;
+    color: green;
+}
+
+.map{
+    position: absolute;
+    width: 70%;
+    height: 25vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*共通背景=====================================================================*/
+.commonBack_img{
+    z-index: 1;
+    width: 95vw;
+    height: 95vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.8;
+    position: fixed;
+}
+
+
+
+
+

@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+/*ロード中=====================================================================*/
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: white;
+    z-index: 1;
+}
+#loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+/*背景=====================================================================*/
+.background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background_img {
+    /*z-index:-9;*/
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 20s 0s infinite;
+    animation: anime 20s 0s infinite;
+}
+
+.background_img:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s; }
+
+.background_img:nth-of-type(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s; }
+
+.background_img:nth-of-type(4) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s; }
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+        transform: scale(1.1) ;
+        /*z-index:-10;*/
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
+
+
+.logo{
+    top: 30%;
+    left: 10%;
+    position: fixed;
+}
+
+.copyMain{
+    top: 55%;
+    left: 10%;
+    display: block;
+    opacity:0;
+    font-family: "Tsukushi A Round Gothic";
+    font-size: 200%;
+    position: fixed;
+    color: white;
+}
+
+.copyMain span {
+    opacity: 0;
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s ease-in-out;
+}
+
+
+/*メニュー=====================================================================*/
+.naviBack{
+    position: absolute;
+    top: 0;
+    width:100%; 
+    height:100%;
+    background-color:black;
+    display: block;
+    opacity: 0;
+}
+
+.naviMenu{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.naviMenu li{
+    list-style: none;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.naviMenu li a{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.conceptTxt a::before, .planTxt a::before, .accessTxt a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+.conceptTxt a:hover::before, .planTxt a:hover::before, .accessTxt a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.naviPic{
+    z-index: -1;
+    opacity: 0;
+}
+
+.conceptPic{
+    position: absolute;
+    top: 17%;
+    left: -15%;
+}
+
+.planPic{
+    position: absolute;
+    top: 50%;
+    left: -15%;
+}
+
+.accessPic{
+    position: absolute;
+    top: 85%;
+    left: -15%;
+}
+
+.naviBackPic{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    opacity: 0;
+}
+
+
+/*ハンバーガーメニュー=========================================================*/
+/*btnTrigger===========================*/
+.btnTrigger {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.btnTrigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.btnTrigger, .btnTrigger span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+.btnTrigger span:nth-of-type(1) {
+    top: 0;
+}
+.btnTrigger span:nth-of-type(2) {
+    top: 13px;
+}
+.btnTrigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+/*#naviBtn=============================*/
+#naviBtn.active span:nth-of-type(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+#naviBtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+#naviBtn.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+

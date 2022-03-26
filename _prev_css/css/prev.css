@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.empty {
+    height: 150px;
+}
+
+.subTitle {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: "Chalkboard SE";
+}
+
+.fontHiragino {
+    font-family: "ヒラギノ明朝 ProN";
+}
+
+.fontAcumin {
+    font-family: "Acumin Variable Concept";
+}
+
+.fontHarenosora {
+    font-family: "はれのそら明朝";
+}
+.fontChalkboardSE {
+    font-family: "Chalkboard SE";
+}
+
+.fontEuphemiaUCAS {
+    font-family: "Euphemia UCAS";
+}
+
+.fontMeiryoUI {
+    font-family: "Meiryo UI";
+}
+
+.fontWeight100 {
+    font-weight: 100;
+}
+
+.fontWeight200 {
+    font-weight: 200;
+}
+
+.fontWeight300 {
+    font-weight: 300;
+}
+
+.fontWeight400 {
+    font-weight: 400;
+}
+
+.fontWeight800 {
+    font-weight: 800;
+}
+
+.txt7rem {
+    font-size: 7rem;
+}
+
+.txt6rem {
+    font-size: 6rem;
+}
+
+.txt5rem {
+    font-size: 5rem;
+}
+
+.txt4rem {
+    font-size: 4rem;
+}
+
+.txt3rem {
+    font-size: 3rem;
+}
+
+.txt2rem {
+    font-size: 2rem;
+}
+
+.txt1_5rem {
+    font-size: 1.5rem;
+}
+
+.txt1rem {
+    font-size: 1rem;
+}
+
+.txt0_8rem {
+    font-size: 0.8rem;
+}
+
+.colorWhite {
+    color: #FFF;
+}
+
+.colorWhiteGray {
+    color: #D9D9D9;
+}
+
+.colorGray {
+    color: #808080;
+}
+
+.colorYellow {
+    color: #FFFF00;
+}
+
+.colorWhite {
+    color: #FFFFFF;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+
+
+/*タイトル=======================================================================*/
+.title {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+/*メイン領域=======================================================================*/
+.sitePic {
+    margin: 50px 0 0 30px;
+    width: 60%;
+    height: 60%;
+}
+
+.siteTxt {
+    margin: 50px 30px 0 0;
+    width: 33%;
+}
+
+.siteTxt p {
+    margin: 0;
+}
+
+
+
+/*リンク=======================================================================*/
+.link {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+}
+
+.link svg {
+    transition: 0.3s;
+    stroke:#808080;
+    cursor: pointer;
+    animation: UpDown 3s ease-in-out both infinite;
+}
+
+.link svg:hover {
+    stroke:#000;
+    animation: Hover 1s ease-in-out both;
+}
+
+.link p {
+    margin: 0;
+    color: #000;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    40% {
+        transform: translate3d(0, -20px, 0);
+    }
+    55% {
+        transform: translate3d(0, 0, 0);
+    }
+    60% {
+        transform: translate3d(0, -10px, 0);
+    }
+    70% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes Hover {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
